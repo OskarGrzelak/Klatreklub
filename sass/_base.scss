@@ -26,11 +26,11 @@ body {
 }
 
 .container {
-    height: 300vh;
+    min-height: 100vh;
     width: 100%;
 
     display: grid;
-    grid-template-rows: 8rem calc(90vh - 8rem) min-content auto 60vh auto;
+    grid-template-rows: 8rem calc(90vh - 8rem) min-content min-content 60vh min-content;
     grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(2, [col-start] minmax(min-content, 50rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
 
     &::before {

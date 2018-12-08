@@ -1,0 +1,35 @@
+.features {
+    
+    grid-row: 4 / 5;
+    grid-column: center-start / center-end;
+    z-index: 2;
+    margin: 5rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-column-gap: 6rem;
+    grid-row-gap: 5rem;
+    align-items: end;
+}
+
+.card {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .4);
+
+    &--long {
+        grid-column: 1 / -1;
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+    }
+
+    & p {
+        font-size: 1.4rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}

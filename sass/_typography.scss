@@ -14,10 +14,18 @@
     font-size: 4.5rem;
 }
 
-.heading-tertiary {
-    font-size: 3rem;
+.heading-tertiary,
+.heading-quaternary {
     line-height: 3.5rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .1rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+}
+
+.heading-quaternary {
+    font-size: 2rem;
 }
