@@ -1,0 +1,22 @@
+.about {
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4;
+    z-index: 2;
+    margin: 18rem 0;
+    padding: 8rem 5rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .4);
+
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+    & p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
