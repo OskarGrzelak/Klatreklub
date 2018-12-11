@@ -1,0 +1,42 @@
+.beginners {
+    grid-row: 4 / 5;
+    grid-column: full-start / full-end;
+    z-index: 2;
+    margin: 8rem 0;
+
+    display: grid;
+    grid-template-rows: 10rem min-content 10rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        grid-column: 2 / -1;
+        grid-row: 1 / 4;
+
+        background-image: linear-gradient(to right, rgba(#ffffff, 1) 20%, rgba(#ffffff, .4)), url(../img/img-1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__text-box {
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+        margin-left: 10rem;
+        margin-right: -5rem;
+        padding: 8rem 5rem;
+        background-color: white;
+        box-shadow: 0 2rem 4rem rgba(black, .4);
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
