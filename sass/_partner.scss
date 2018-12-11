@@ -1,0 +1,16 @@
+.partner {
+    grid-row: 10 / 11;
+    grid-column: full-start / full-end;
+    background-color: $color-primary;
+    z-index: 2;
+    text-align: center;
+
+    p {
+        width: 70%;
+        margin: 6rem auto;
+        color: #ffffff;
+        font-size: 3rem;
+        line-height: 5rem;
+        font-weight: 300;
+    }
+}
