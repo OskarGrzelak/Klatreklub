@@ -1,0 +1,14 @@
+.footer {
+    grid-row: 11 / 12;
+    grid-column: full-start / full-end;
+    background-color: $color-primary;
+    z-index: 2;
+    border-top: 1px solid $color-primary-light;
+    padding: 8rem 4rem;
+    
+    &__copyright {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+}

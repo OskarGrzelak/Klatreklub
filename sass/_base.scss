@@ -6,6 +6,38 @@ $color-primary: #327efc;
 $color-primary-light: #5696ff;
 $color-primary-dark: #0f5bd8;
 
+// MEDIA QUIRIES VARIABLES
+
+// MIXINS
+
+// ANIMATIONS
+
+.hidden {
+    opacity: 0;
+}
+
+.move-up {
+    animation-name: moveUp;
+    animation-duration: 1s;
+
+
+    @keyframes moveUp {
+        0% {
+            opacity: 0;
+            transform: translateY(10rem);
+        }
+    
+        80% {
+            transform: translateY(-2rem);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -30,7 +62,7 @@ body {
     width: 100%;
 
     display: grid;
-    grid-template-rows: 8rem calc(90vh - 8rem) min-content min-content min-content 45vh 45vh min-content min-content min-content;
+    grid-template-rows: 8rem calc(90vh - 8rem) min-content min-content min-content 45vh 45vh min-content min-content min-content min-content;
     grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(2, [col-start] minmax(min-content, 50rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
 
     &::before {

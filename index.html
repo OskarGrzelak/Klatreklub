@@ -35,13 +35,14 @@
                 <span class="nav__icon">&nbsp;</span>
             </label>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Åbningstider</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Om kluben</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Hvordan begynder man</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Hold i OKK</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Find os</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Indmeldelse</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Udmeldelse</a></li>
+                <li class="nav__item"><a class="nav__link" id="openings">Åbningstider</a></li>
+                <li class="nav__item"><a class="nav__link" id="about">Om kluben</a></li>
+                <li class="nav__item"><a class="nav__link" id="beginners">Hvordan begynder man</a></li>
+                <li class="nav__item"><a class="nav__link" id="features">Hold i OKK</a></li>
+                <li class="nav__item"><a class="nav__link" id="map">Find os</a></li>
+                <li class="nav__item"><a class="nav__link" id="registration">Indmeldelse</a></li>
+                <li class="nav__item"><a class="nav__link" id="resignation">Udmeldelse</a></li>
+                <li class="nav__item"><a class="nav__link" id="partner">Privatslivpolitik</a></li>
             </ul>
         </nav>
 
@@ -55,15 +56,18 @@
         <div class="openings">
             <h3 class="heading-tertiary">Åbningstider:</h3>
             <ul>
-                <li>Mandag 17-21</li>
-                <li>Tirsdag 17-21</li>
-                <li>Onsdag 17-21</li>
-                <li>Torsdag 18-21</li>
-                <li>Søndag 13-17</li>
+                <li>Mandag</li><span>17-21</span>
+                <li>Tirsdag</li><span>17-21</span>
+                <li>Onsdag</li><span>17-21</span>
+                <li>Torsdag</li><span>18-21</span>
+                <li>Fredag</li><span>lukket</span>
+                <li>Lørdag</li><span>lukket</span>
+                <li>Søndag</li><span>13-17</span>
             </ul>
+            <p>Klubben er lukket i juli måned. Medlemmer kan se Facebookgruppen for evt. åbningsdage.</p>
         </div>
 
-        <div class="about">
+        <div class="about hidden">
             <h3 class="heading-tertiary about__heading">Det er os</h3>
             <p>
                 I OKK er der højt til loftet! 15 meter helt præcist. Man kan både klatre ‘topreb’ og ‘1. mands’, hvor man er bundet i den ene ende af et reb, som en anden person holder fast i. Derudover har vi et boulder-område med lave klatrevægge, hvor man lander på store, bløde madrasser når man falder af.
@@ -78,7 +82,7 @@
 
         <div class="beginners">
             <div class="beginners__img"></div>
-            <div class="beginners__text-box">
+            <div class="beginners__text-box hidden">
                 <h3 class="heading-tertiary beginners__heading">Hvordan kommer man igang med at klatre</h3>
                 <p>
                     Alle nye klatrere i Odense Klatreklub skal igennem vores introkursus.
@@ -101,12 +105,12 @@
         </div>
 
         <div class="features">
-            <div class="card">
+            <div class="card hidden">
                 <h4 class="heading-quaternary card__heading">Fællestræning</h4>
                 <p>Hver torsdag kl 18.30 holder vi fællestræning som en af klubbens trænere arrangerer. Her er alle klubbens medlemmer velkomne til at deltage. Vi laver fælles opvarmning og sociale klatrelege. Herefter præsenterer træneren nogle øvelser der kan inspirere og motivere medlemmerne i deres klatring. Vi klatrer sammen på kryds og tværs af alder og erfaringsniveau og slutter som regel af med en kop kaffe eller the, og måske har nogen taget kage med…</p>
             </div>
 
-            <div class="card">
+            <div class="card hidden">
                 <h4 class="heading-quaternary card__heading">Familieklatring</h4>
                 <p>I Odense Klatreklub betyder børneklatring også familieklatring. Det betyder børnene skal have en voksen med der deltager i træningen.</p>
                 <p>Hver torsdag kl.16.30 til 18.30 er der fællestræning for børn og deres familie, hvor vi laver lege og øvelser tilpasset 7 til 12 åriges forudsætninger, men hvor niveauet bliver løftet i vejret af deltagende forældre.</p>
@@ -116,12 +120,12 @@
                 <p>Forældre behøver ikke være medlemmer.</p>
             </div>
 
-            <div class="card">
+            <div class="card hidden">
                 <h4 class="heading-quaternary card__heading">Juniorhold</h4>
                 <p>Juniorholdet er for medlemmer over 12 år der ønsker at udvikle deres klatreevner og hygge sig med jævnaldrende. Det er fokuseret træning med fokus på denne aldersgruppes forudsætninger og behov. På dette hold klatrer børnene med hinanden og lærer derfor også at sikre hinanden. Dette hold kræver tilmelding, kontakt en af klubbens instruktører eller skriv en mail til odenseklatreklub@gmail.com</p>
             </div>
 
-            <div class="card card--long">
+            <div class="card card--long hidden">
                 <h4 class="heading-quaternary card__heading">Skoleklatring</h4>
                 <p>I Odense Klatreklub kan vi tilbyde kortere og længere forløb til skoler og andre institutioner uden for klubbens åbningstid.</p>
                 <p>Se www.odenseklatrehal.dk</p>
@@ -133,7 +137,7 @@
             <iframe src="http://maps.google.com/maps?q=Odense KlatreKlub,odense,denmark&layer=tc&t=m&z=16&source=embed&output=svembed" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <div class="registration">
+        <div class="registration hidden">
             <h3 class="heading-tertiary registration__heading">Indmeldelse</h3>
             <p>Indmeldelse i klubben foregår ved personlig fremmøde. Henvend dig til en vagt så hjælper de med at få dig indmeldt.</p>
             <p>Første gang betaler du i klubben. Du kan betale kontant eller med mobilepay</p>
@@ -149,7 +153,7 @@
             <p>Medbring gerne et billede, ca. passtørrelse, så vi kan lave et medlemskort til dig med det samme.</p>            
         </div>
 
-        <div class="resignation">
+        <div class="resignation hidden">
             <h3 class="heading-tertiary resignation__heading">Udmeldelse</h3>
             <p>Medlemskab er løbende og der skal betales kontingent indtil man skriftligt har udmeldt sig. Du kan bruge formularen under kontakt eller skrive en mail til odenseklatreklub@gmail.com</p>
             <p>Man kan ikke bare undlade at betale, heller ikke hvis man ikke kommer i en periode. Der kan ikke oprettes passivt medlemskab.</p>
@@ -157,8 +161,15 @@
         </div>
 
         <div class="partner">
-            <p>På klatreklubbens platforrm finder du også virksomheden Altitude Above All, der uddanner erhvervsklatrere til industrien. Virksomheden ejes af Jesper Valentiner Rasmussen.</p>
+            <p>På klatreklubbens platform finder du også virksomheden Altitude Above All, der uddanner erhvervsklatrere til industrien. Virksomheden ejes af Jesper Valentiner Rasmussen.</p>
         </div>
+
+        <footer class="footer">
+            <p class="footer__copyright">
+                &copy; 2018, Odense KlatreKlub
+            </p>
+        </footer>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
