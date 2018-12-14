@@ -8,6 +8,15 @@
     grid-template-rows: 10rem min-content 10rem;
     grid-template-columns: repeat(2, 1fr);
 
+    @media only screen and (max-width: $small-scr) {
+        grid-row: 5 / 6;
+    }
+
+    @media only screen and (max-width: $smallest-scr) {
+        grid-template-rows: 6rem min-content 6rem;
+        margin-bottom: 6rem;
+    }
+
     &__heading {
         margin-bottom: 3rem;
     }
@@ -29,6 +38,10 @@
         padding: 8rem 5rem;
         background-color: white;
         box-shadow: 0 2rem 4rem rgba(black, .4);
+
+        @media only screen and (max-width: $small-scr) {
+            margin-left: 3rem;
+        }
 
         p {
             font-size: 1.6rem;

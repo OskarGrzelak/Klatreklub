@@ -7,6 +7,14 @@
     z-index: 2;
     margin: 10rem 0;
 
+    @media only screen and (max-width: $small-scr) {
+        grid-row: 9 / 10;
+    }
+
+    @media only screen and (max-width: $smallest-scr) {
+        margin: 6rem 0;
+    }
+
     &__heading {
         margin-bottom: 3rem;
     }

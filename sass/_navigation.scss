@@ -16,14 +16,27 @@
     justify-content: space-between;
     align-items: center;
 
+    @media only screen and (max-width: $smallest-scr) {
+        padding: 0 1rem;
+    }
+
     &__logo {
         height: 7rem;
+
+        @media only screen and (max-width: $smallest-scr) {
+            height: 6rem;
+        }
     }
 
     &__contact {
         font-size: 1.8rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $smallest-scr) {
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
     }
 
     &__contact-group {
@@ -32,6 +45,11 @@
 
         &:not(:last-child) {
             margin-right: 4rem;
+
+            @media only screen and (max-width: $smallest-scr) {
+                margin-right: 0;
+                margin-bottom: .5rem;
+            }
         }
     }
 

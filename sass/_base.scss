@@ -6,7 +6,13 @@ $color-primary: #327efc;
 $color-primary-light: #5696ff;
 $color-primary-dark: #0f5bd8;
 
-// MEDIA QUIRIES VARIABLES
+// MEDIA QUERIES VARIABLES
+
+$largest-scr: 75em;
+$large-scr: 62.5em;
+$medium-scr: 56.25em;
+$small-scr: 50em;
+$smallest-scr: 37.5em;
 
 // MIXINS
 
@@ -49,6 +55,14 @@ $color-primary-dark: #0f5bd8;
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $largest-scr) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $large-scr) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -62,8 +76,16 @@ body {
     width: 100%;
 
     display: grid;
-    grid-template-rows: 8rem calc(90vh - 8rem) min-content min-content min-content 45vh 45vh min-content min-content min-content min-content;
+    grid-template-rows: 8rem calc(90vh - 8rem) repeat(3, min-content) 45vh 45vh repeat(4, min-content);
     grid-template-columns: [full-start] minmax(7rem, 1fr) [center-start] repeat(2, [col-start] minmax(min-content, 50rem) [col-end]) [center-end] minmax(7rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $small-scr) {
+        grid-template-rows: 8rem calc(90vh - 8rem) repeat(4, min-content) 45vh 45vh repeat(4, min-content);
+    }
+
+    @media only screen and (max-width: $smallest-scr) {
+        grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(2, [col-start] minmax(min-content, 50rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    }
 
     &::before {
         content: '';

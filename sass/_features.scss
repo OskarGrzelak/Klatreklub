@@ -10,6 +10,20 @@
     grid-column-gap: 6rem;
     grid-row-gap: 5rem;
     align-items: end;
+
+    @media only screen and (max-width: $medium-scr) {
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));;
+    }
+
+    @media only screen and (max-width: $small-scr) {
+        grid-row: 6 / 7;
+    }
+
+    @media only screen and (max-width: $smallest-scr) {
+        grid-template-columns: minmax(20rem, 1fr);
+        grid-row-gap: 6rem;
+        margin-bottom: 6rem;
+    }
 }
 
 .card {
@@ -19,6 +33,10 @@
 
     &--long {
         grid-column: 1 / -1;
+
+        @media only screen and (max-width: $medium-scr) {
+            grid-column: auto;
+        }
     }
 
     &__heading {
